@@ -88,15 +88,9 @@ int main()
 		std::cout << "PIPE Found!!\n" << endl;
 
 	//Test cases
-	SendToServer(pipe, "StreamBase was/is a Fun Project.");
+	SendToServer(pipe, "This is a Client and Server Project");
 	Sleep(2000);
-	SendToServer(pipe, "Even thou partially complete. Only 8 hours was spent from Monday Aug 20th, 2018.");
-	Sleep(2000);
-	SendToServer(pipe, "Never used CMake but I understand what its used for now (Not implemented).");
-	Sleep(2000);
-	SendToServer(pipe, "Definitely challenging and didn't know any of this before.");
-	Sleep(2000);
-	SendToServer(pipe, "Hooray!! For StackOverflow and Microsoft API Docs.");
+	SendToServer(pipe, "This demonstrates the server receiving the data from the connected client");
 	Sleep(2000);
 
 	CloseHandle(pipe);
